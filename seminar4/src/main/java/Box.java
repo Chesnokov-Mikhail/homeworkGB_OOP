@@ -44,7 +44,7 @@ public class Box<T extends Fruit> {
         return sum;
     }
     // метод сравнивнения коробки
-    public boolean compare(Box o1) {
+    public boolean compare(Box<? extends Fruit> o1) {
         if (Math.abs(o1.getWeight() - this.getWeight()) < 0.001)
             return true;
         return false;
